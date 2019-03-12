@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println("🏓 http://localhost:8080/ping")
+	fmt.Println("🏓: http://localhost:8080/ping")
 
 	http.HandleFunc("/ping", ping.Handler)
 	http.ListenAndServe(":8080", nil)
